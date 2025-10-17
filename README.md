@@ -46,13 +46,21 @@ It’s ideal for quickly prototyping small tools, demos, and visual interfaces �
 ## 🧰 Folder Structure
 
 project-root/
+
 ├── core/
+
 │ └── config.py # Contains global config (e.g., GitHub owner, API keys)
+
 ├── outputs/
+
 │ └── <task-name>/ # Each generated project folder
+
 │ ├── index.html # Generated HTML file (self-contained)
+
 │ └── README.md # Log of task brief, round info, and AI output summary
+
 ├── generate_static_site.py # Main script (core logic)
+
 └── requirements.txt # Dependencies
 
 
@@ -91,7 +99,9 @@ project-root/
 
 After running the generator, your folder will contain:
 outputs/my_project/
+
 ├── index.html   # Fully working web app
+
 └── README.md    # Contains task brief, AI output, and summary
 
 The resulting HTML file runs fully offline — simply open it in any browser.
