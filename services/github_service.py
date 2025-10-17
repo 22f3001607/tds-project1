@@ -190,9 +190,6 @@ This project is licensed under the MIT License.
         print("[Warning] GitHub Pages did not respond with 200 OK after retries.")
 
 
-        sha = repo.head.commit.hexsha
-        return sha, pages_url
-
     # Step 8: Scan for secrets (optional if installed)
     try:
         subprocess.run(["trufflehog", "filesystem", str(folder)], check=False)
@@ -200,3 +197,8 @@ This project is licensed under the MIT License.
         print("[Security] Secret scan completed.")
     except FileNotFoundError:
         print("[Security] Skipped secret scan (trufflehog/gitleaks not installed).")
+
+    # ✅ Return results after all steps
+    sha = repo.head.commit.hexsha
+    print(f"[GitHub] Returning commit SHA: {sha}")
+    return sha, pages_url
