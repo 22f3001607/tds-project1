@@ -98,6 +98,7 @@ project-root/
 ## 🧾 Output Example
 
 After running the generator, your folder will contain:
+
 outputs/my_project/
 
 ├── index.html   # Fully working web app
@@ -116,10 +117,9 @@ The resulting HTML file runs fully offline — simply open it in any browser.
 
 - Language: Python 3.10+
 - AI Model: OpenAI GPT-4o-mini
-
 - Libraries:
-    - openai
-    - pathlib, re, os
+    - `openai`
+    - `pathlib`, `re`, `os`
 
 ## 📜 License
 
